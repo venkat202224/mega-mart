@@ -1,0 +1,72 @@
+.signupContainer {
+    border: 2px solid rgb(176, 168, 168);
+    padding: 20px;
+    height: 750px;
+    width: 420px;
+    
+}
+
+.megamart {
+    color: brown;
+    padding: 0px;
+    border-bottom: solid 2px rgb(143, 142, 142);
+
+}
+
+.megaSignup {
+    font-size: 35px;
+
+}
+
+.signupSections {
+    height: 300px;
+
+
+}
+
+
+.signupField {
+
+    justify-content: center;
+    display: flex;
+    padding: 10px;
+    width: 380px;
+    margin: 10px 0px 10px 0px;
+    border-radius: 10px;
+}
+.userRole{
+display: flex;
+padding: 10px;
+
+
+}
+select {
+    padding: 10px;
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 400px;
+    border: solid;
+    border-radius: 10px;
+}
+
+.errFlds {
+    color: red;
+    margin-top: 5p
+    ;
+}
+.signupClick {
+    color: white;
+    background-color: darkgreen;
+    position: absolute;
+    letter-spacing: 3px;
+    margin-left: 4%;
+    padding: 15px;
+    width: 307px;
+    font-size: 23px;
+    margin-top: 10px;
+}
+
+.signupClick:hover {
+    background-color: brown;
+}

@@ -1,0 +1,46 @@
+<div class="signupContainer">
+    <h1 class="megamart">Mega Mart</h1>
+    <div class="signupSection">
+        <form [formGroup]="signupForm">
+            <h2 class="megaSignup">Sign up</h2>
+
+            <div>
+                Name<input class="signupField" formControlName="name" type="text" />
+                <br />
+                <small class="errFlds" *ngIf="signupForm.controls['name'].errors?.['required']">
+                    Name is mandatory
+                </small>
+            </div>
+
+            <div>
+                Email<input class="signupField" formControlName="email" type="email" /> </div>
+            <small class="errFlds" *ngIf="signupForm.controls['email'].errors?.['required']">
+                Email is mandatory
+            </small>
+            <div>
+                User Role: <select name="userRole">
+                    <option>Please select user role</option>
+                    <option>Customer</option>
+                    <option>Seller</option>
+                    <option>Admin</option>
+                </select>
+                <small class="errFlds" *ngIf="signupForm.controls['userrole'].errors?.['required']">
+                    User Role is mandatory
+                </small>
+            </div>
+
+            <div> Password<input class="signupField" formControlName="password" type="password" />
+                <small class="errFlds" *ngIf="signupForm.controls['password'].errors?.['required']">
+                    Password is mandatory
+                </small>
+            </div>
+            <div> Confirm Password<input class="signupField" formControlName="confirm" type="password" />
+                <small class="errFlds" *ngIf="signupForm.controls['confirm'].errors?.['required']">
+                    Confirm Password is mandatory
+                </small>
+            </div>
+
+            <button class="signupClick" (click)="myClickHandler()">Create Account</button>
+        </form>
+    </div>
+</div>
