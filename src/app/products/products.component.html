@@ -1,0 +1,42 @@
+Hello World
+<div class="productSection">
+    <form [formGroup]="productForm">
+        <h2 class="loginSubHeader">Add a Product</h2>
+        <div class="productField">
+            <label>Add Product</label>
+            <input formControlName="product" type="text" />
+            <div class="errFlds" *ngIf="submitButtonStatus && productForm.controls['product'].errors?.['required']">
+                Please add product
+            </div>
+        </div>
+
+        <div class="productField">
+            <label>Description</label>
+            <input formControlName="description" type="text" />
+            <div class="errFlds" *ngIf="submitButtonStatus && productForm.controls['description'].errors?.['required']">
+                Write description
+            </div>
+        </div>
+        <div class="productField">
+            <label>Price</label>
+            <input formControlName="price" type="number" />
+            <div class="errFlds" *ngIf="submitButtonStatus && productForm.controls['price'].errors?.['required']">
+                Price is mandatory
+            </div>
+        </div>
+
+        <div class="productField">
+            <label>Category</label>
+            <select>
+<option>Electronics</option>
+<option>Clothes</option>
+<option>Grocery</option>
+            </select>
+            <input formControlName="category" type="text" />
+            <div class="errFlds" *ngIf="submitButtonStatus && productForm.controls['category'].errors?.['required']">
+                Select category
+            </div>
+        </div>
+        <button class="btnWrapper" (click)="myClickHandler()">Submit</button>
+</form>
+</div>

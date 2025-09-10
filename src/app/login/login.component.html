@@ -1,0 +1,30 @@
+<div class="loginContainer">
+    <h1 class="loginTitle">Mega Mart</h1>
+    <div class="loginSection">
+        <form [formGroup]="loginForm">
+            <h2 class="loginSubHeader">Login</h2>
+
+            <div class="loginField">
+                <label>Email</label>
+                <input formControlName="email" type="email" />
+                <div class="errFlds" *ngIf="submitButtonStatus && loginForm.controls['email'].errors?.['required']">
+                    Email is mandatory
+                </div>
+            </div>
+
+            <div class="loginField">
+                <label>Password</label>
+                <input  formControlName="password" type="password" />
+                <div class="errFlds" *ngIf="submitButtonStatus && loginForm.controls['password'].errors?.['required']">
+                    Password is mandatory
+                </div>
+            </div>
+
+           <div class="btnWrapper"> <button class="loginBtn" (click)="loginHandler()">Login</button></div>
+            <div class="signInLink">
+                You didnt have an account
+                <a href="#" (click)="navigateSignup($event)">Sign up</a>
+            </div>
+        </form>
+    </div>
+</div>

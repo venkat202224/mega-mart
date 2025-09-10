@@ -1,0 +1,86 @@
+.head{
+    margin-left: 20%;
+}
+
+.navbar {
+    border: solid 2px black;
+    max-width: 12%;
+    padding: 0px 10px 0px 16px;
+    height: 550px;
+    font-size: x-large;
+    margin: 5px;
+    background-color: rgb(20, 20, 73);
+    border-radius: 5px;
+    margin-left: 20%;
+    margin-bottom: 10px;
+}
+
+.nav-item {
+
+    margin: 5px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.navTag {
+    color: white;
+}
+.navTag:hover{
+    background-color: rgb(76, 77, 77);
+    border-radius: 5px;
+    width: 30px;
+}
+
+.box{
+    display: flex;
+    width: fit-content;
+    margin: auto;
+    margin-top: -39%;
+}
+.boxOne {
+    border: 1px solid;
+    padding: 20px;
+    background: rgb(1, 94, 1);
+    color:white;
+    margin-right: 5px;
+    border-radius: 5px;
+}
+
+.boxTwo {
+    border: 1px solid;
+    padding: 20px;
+    background: rgb(30, 30, 255);
+    color:white;
+    margin-right: 5px;
+    border-radius: 5px;
+}
+
+.boxThree {
+    border: 1px solid;
+    padding: 20px;
+    background: rgb(185, 123, 8);
+    color:white;
+    margin-right: 5px;
+    border-radius: 5px;
+}
+
+
+
+.header{
+margin-left:36% ;
+margin-top: 30px;
+}
+table {
+  border:1px solid black;
+  margin: auto;
+  margin-top: 10px;
+}
+
+th{
+border:1px solid black;
+padding: 15px;
+}
+td{
+    border:1px solid black;
+    padding: 15px;
+}

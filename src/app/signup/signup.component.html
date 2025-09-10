@@ -6,41 +6,43 @@
 
             <div>
                 Name<input class="signupField" formControlName="name" type="text" />
-                <br />
-                <small class="errFlds" *ngIf="signupForm.controls['name'].errors?.['required']">
+                <div class="errFlds" *ngIf="submitBtnStatus && signupForm.controls['name'].errors?.['required']">
                     Name is mandatory
-                </small>
+                </div>
             </div>
 
             <div>
                 Email<input class="signupField" formControlName="email" type="email" /> </div>
-            <small class="errFlds" *ngIf="signupForm.controls['email'].errors?.['required']">
+            <div class="errFlds" *ngIf="submitBtnStatus && signupForm.controls['email'].errors?.['required']">
                 Email is mandatory
-            </small>
+            </div>
             <div>
-                User Role: <select name="userRole">
+                User Role: <select name="userRole" formControlName="userrole">
                     <option>Please select user role</option>
                     <option>Customer</option>
                     <option>Seller</option>
                     <option>Admin</option>
                 </select>
-                <small class="errFlds" *ngIf="signupForm.controls['userrole'].errors?.['required']">
+                <div class="errFlds" *ngIf="submitBtnStatus && signupForm.controls['userrole'].errors?.['required']">
                     User Role is mandatory
-                </small>
+                </div>
             </div>
 
             <div> Password<input class="signupField" formControlName="password" type="password" />
-                <small class="errFlds" *ngIf="signupForm.controls['password'].errors?.['required']">
+                <div class="errFlds" *ngIf="submitBtnStatus && signupForm.controls['password'].errors?.['required']">
                     Password is mandatory
-                </small>
+                </div>
             </div>
             <div> Confirm Password<input class="signupField" formControlName="confirm" type="password" />
-                <small class="errFlds" *ngIf="signupForm.controls['confirm'].errors?.['required']">
+                <div class="errFlds" *ngIf="submitBtnStatus && signupForm.controls['confirm'].errors?.['required']">
                     Confirm Password is mandatory
-                </small>
+                </div>
             </div>
 
-            <button class="signupClick" (click)="myClickHandler()">Create Account</button>
+            <div class="signBtn">
+                <button class="signupClick" (click)="myClickHandler()">Create Account</button>
+            </div>
+            <!-- <div><a href="#" (click)="navigateWebhome($event)">Seller Dashboard </a></div> -->
         </form>
     </div>
 </div>

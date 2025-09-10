@@ -1,9 +1,16 @@
+body{
+border-radius: 10px;
+}
 .signupContainer {
-    border: 2px solid rgb(176, 168, 168);
-    padding: 20px;
-    height: 750px;
+    border: 2px solid black;
+    padding: 10px;
+    height: 100%;
     width: 420px;
-    
+    justify-content: center;
+    margin: 0 auto;
+    border-radius: 5px;
+    background-color: none;
+
 }
 
 .megamart {
@@ -29,17 +36,19 @@
 
     justify-content: center;
     display: flex;
-    padding: 10px;
+    padding: 5px;
     width: 380px;
     margin: 10px 0px 10px 0px;
     border-radius: 10px;
 }
-.userRole{
-display: flex;
-padding: 10px;
+
+.userRole {
+    display: flex;
+    padding: 10px;
 
 
 }
+
 select {
     padding: 10px;
     display: flex;
@@ -52,21 +61,29 @@ select {
 
 .errFlds {
     color: red;
-    margin-top: 5p
-    ;
+    margin-bottom: 7px;
 }
+
 .signupClick {
     color: white;
     background-color: darkgreen;
-    position: absolute;
     letter-spacing: 3px;
-    margin-left: 4%;
     padding: 15px;
     width: 307px;
     font-size: 23px;
     margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border-color: green;
 }
 
 .signupClick:hover {
-    background-color: brown;
+    background-color: rgb(104, 32, 32);
+    border-color: rgb(6, 60, 60);
+    box-shadow: inset;
+}
+
+.signBtn {
+    display: flex;
+    justify-content: center;
 }

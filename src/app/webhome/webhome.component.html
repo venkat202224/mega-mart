@@ -1,0 +1,75 @@
+<div class="container">
+    <div class="head">
+        <h1>Seller DashBoard</h1>
+    </div>
+    <div class="navbar">
+        <ul>
+            <li class="nav-item">
+                <a class="navTag ">Dashboard</a>
+            </li>
+            <li class="nav-item">
+                <a class="navTag" (click)="navigateProducts($event)" >Products</a>
+            </li>
+            <li class="nav-item">
+                <a (click)="navigateAdmin($event)" class="navTag">Inventory</a>
+            </li>
+            <li class="nav-item">
+                <a (click)="navigateCustomer($event)" class="navTag">Orders</a>
+            </li>
+        </ul>
+    </div>
+    <div class="box">
+        <div class="boxOne">
+            <p>Total Sale</p>
+            <p>$2.560</p>
+        </div>
+
+
+        <div class="boxTwo">
+            <p>Total orders</p>
+            <p>350</p>
+        </div>
+
+        <div class="boxThree">
+            <p>Low Stocl Alerts</p>
+            <p>5</p>
+        </div>
+    </div>
+    <div>
+        <h2 class="header">Recent Activity</h2>
+        <table>
+
+            <tr>
+                <th>Order</th>
+                <th>Date</th>
+                <th>Status</th>
+                <th>Total</th>
+            </tr>
+
+            <tr *ngFor="let item of ordersList">
+                <td>{{item.order}}</td>
+                <td>{{item.Date}}</td>
+                <td>{{item.status}}</td>
+                <td>{{item.total}}</td>
+            </tr>
+        </table>
+    </div>
+</div>
+<div class="newTable">
+    <table>
+
+        <tr>
+            <th>Order</th>
+            <th>Date</th>
+            <th>Status</th>
+
+        </tr>
+
+        <tr *ngFor="let item of httpData">
+            <td>{{item.userId}}</td>
+            <td>{{item.id}}</td>
+            <td>{{item.title}}</td>
+
+        </tr>
+    </table>
+</div>
